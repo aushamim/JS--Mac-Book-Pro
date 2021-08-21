@@ -32,31 +32,94 @@
           </div>
           <div class="mt-5">
             <h3 class="text-sm font-bold mb-1">Memory</h3>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="memorybtn-1"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               8GB unified memory
             </button>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="memorybtn-2"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               16GB unified memory
             </button>
           </div>
           <div class="mt-5">
             <h3 class="text-sm font-bold mb-1">Storage</h3>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="storagebtn-1"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               256GB SSD storage
             </button>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="storagebtn-2"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               512GB SSD storage
             </button>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="storagebtn-3"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               1TB SSD storage
             </button>
           </div>
           <div class="mt-5">
             <h3 class="text-sm font-bold mb-1">Choose your delivery option</h3>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="deliverybtn-1"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               Friday, Aug 25 FREE Prime Delivery
             </button>
-            <button class="p-1 rounded border border-black focus:ring">
+            <button
+              id="deliverybtn-2"
+              class="
+                p-1
+                rounded
+                border border-black
+                focus:ring
+                hover:bg-gray-500 hover:text-white
+              "
+            >
               Friday, Aug 21 Delivery charge $20
             </button>
           </div>
@@ -73,50 +136,66 @@
                 <h3 class="font-bold">Extra Memory Cost</h3>
               </div>
               <div>
-                <h3 class="font-bold">$0</h3>
+                <h3 class="font-bold">$<span id="memory-cost">0</span></h3>
               </div>
               <hr class="col-span-3 my-2" />
               <div class="col-span-2">
                 <h3 class="font-bold">Extra Storage Cost</h3>
               </div>
               <div>
-                <h3 class="font-bold">$0</h3>
+                <h3 class="font-bold">$<span id="storage-cost">0</span></h3>
               </div>
               <hr class="col-span-3 my-2" />
               <div class="col-span-2">
                 <h3 class="font-bold">Delivery charge</h3>
               </div>
               <div>
-                <h3 class="font-bold">$0</h3>
+                <h3 class="font-bold">$<span id="delivery-cost">0</span></h3>
               </div>
               <hr class="col-span-3 my-2 border-black" />
               <div class="col-span-2">
                 <h3 class="font-bold">Total Price</h3>
               </div>
               <div>
-                <h3 class="font-bold">$1299</h3>
+                <h3 class="font-bold">$<span id="total-price">1299</span></h3>
               </div>
               <hr class="col-span-3 my-2" />
               <div class="col-span-3 mt-1">
                 <h3 class="font-semibold">Add Promo Code</h3>
-                <input type="text" class="border p-2 rounded" />
-                <button class="p-2 rounded bg-red-500 text-white font-semibold">
+                <input
+                  type="text"
+                  id="promo-field"
+                  class="border p-2 rounded font-bold"
+                />
+                <button
+                  id="promo-btn"
+                  class="
+                    p-2
+                    rounded
+                    bg-red-500
+                    text-white
+                    font-semibold
+                    hover:bg-red-600
+                  "
+                >
                   Apply
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex justify-center col-span-2 my-2">
-          <hr class="w-3/4 border-black" />
+        <div class="flex justify-center col-span-2 my-3">
+          <hr class="w-3/4" />
         </div>
       </section>
       <section class="mb-5">
         <h1 class="text-center text-3xl font-semibold">
-          Total: $<span>1299</span>
+          Total: $<span id="grand-total-price">1299</span>
         </h1>
       </section>
     </main>
     <footer></footer>
+    <!-- JS -->
+    <script src="/js/calculations.js"></script>
   </body>
 </html>
